@@ -1,0 +1,7 @@
+# Freedom of spelling
+
+Generates a stacked deck capable of spelling a card after 3 cuts and rebuilding of the deck.
+
+## Library
+
+The GenerativeLibrary(http://github.com/guilhermesilveira/generativemagic) was created based on this work.
