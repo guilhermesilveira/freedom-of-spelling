@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 import numpy as np
 import z3
-from z3 import AtMost
+from z3 import Distinct
 
 
 def simulate(cuts: Tuple[int], deck: Tuple[int]):
@@ -62,11 +62,7 @@ for cut1 in tqdm(range(7, 21)):
                 rule = freedom_of_spelling(all_vars, cuts, sequence)
                 rules.add(rule)
 
-for position in range(1, 53):
-    at_starting_point = [card == position for card in all_vars]
-    rule = AtMost(*at_starting_point, 1)
-    rules.add(rule)
-
+rules.add(Distinct(*all_vars))
 rules.add(rules_all_cards_on_deck(all_vars))
 
 print(len(rules))
