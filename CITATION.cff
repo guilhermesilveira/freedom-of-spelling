@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: de Azevedo Silveira
+    given-names: Guilherme
+    orcid: https://orcid.org/0000-0002-2794-8286
+title: guilhermesilveira/freedom-of-spelling: 27th International Conference on Principles and Practice of Constraint Programming (CP 2021)
+version: cp2021-release
+date-released: 2021-07-30
