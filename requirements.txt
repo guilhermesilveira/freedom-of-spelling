@@ -1,0 +1,8 @@
+z3-solver
+tqdm
+numpy
+statsmodels
+psutil
+seaborn
+pandas
+matplotlib
