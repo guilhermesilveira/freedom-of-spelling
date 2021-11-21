@@ -1,0 +1,4 @@
+Command line arguments were ['seed_and_invoke.py', '-350425055', 'phase5b']
+Starting at 00:53:03.555438
+Using seed -350425055 for phase5b
+Running at  00:53:03.555438

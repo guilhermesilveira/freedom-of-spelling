@@ -1,0 +1,32 @@
+  0%|          | 0/47 [00:00<?, ?it/s]  0%|          | 0/47 [00:08<?, ?it/s]
+Traceback (most recent call last):
+  File "seed_and_invoke.py", line 20, in <module>
+    main(sys.argv)
+  File "seed_and_invoke.py", line 16, in main
+    import_module(name)
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python38-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\guilh\Dropbox\projetos\freedomSpeedTest\phase1a.py", line 4, in <module>
+    freedom_search(English(),
+  File "C:\Users\guilh\Dropbox\projetos\freedomSpeedTest\freedom.py", line 124, in freedom_search
+    rule = freedom_of_spelling(all_vars, cuts, sequence, language)
+  File "C:\Users\guilh\Dropbox\projetos\freedomSpeedTest\freedom.py", line 108, in freedom_of_spelling
+    return spelling_rules(all_vars, deck, language)
+  File "C:\Users\guilh\Dropbox\projetos\freedomSpeedTest\freedom.py", line 100, in spelling_rules
+    return z3.Or(rules)
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 1876, in Or
+    return BoolRef(Z3_mk_or(ctx.ref(), sz, _args), ctx)
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 344, in __init__
+    def __init__(self, ast, ctx=None):
+KeyboardInterrupt
+Exception ignored in: <function AstRef.__del__ at 0x11187BB0>
+Traceback (most recent call last):
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 350, in __del__
+    if self.ctx.ref() is not None and self.ast is not None:
+AttributeError: 'BoolRef' object has no attribute 'ctx'

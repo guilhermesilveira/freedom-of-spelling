@@ -1,0 +1,39 @@
+  0%|          | 0/47 [00:00<?, ?it/s]  0%|          | 0/47 [00:08<?, ?it/s]
+Traceback (most recent call last):
+  File "seed_and_invoke.py", line 20, in <module>
+    main(sys.argv)
+  File "seed_and_invoke.py", line 16, in main
+    import_module(name)
+  File "C:\Users\guilh\AppData\Local\Programs\Python\Python38-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\guilh\Dropbox\projetos\freedomSpeedTest\phase1a.py", line 4, in <module>
+    freedom_search(English(),
+  File "C:\Users\guilh\Dropbox\projetos\freedomSpeedTest\freedom.py", line 124, in freedom_search
+    rule = freedom_of_spelling(all_vars, cuts, sequence, language)
+  File "C:\Users\guilh\Dropbox\projetos\freedomSpeedTest\freedom.py", line 108, in freedom_of_spelling
+    return spelling_rules(all_vars, deck, language)
+  File "C:\Users\guilh\Dropbox\projetos\freedomSpeedTest\freedom.py", line 100, in spelling_rules
+    return z3.Or(rules)
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 1874, in Or
+    args = _coerce_expr_list(args, ctx)
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 1206, in _coerce_expr_list
+    s = _reduce(_coerce_expr_merge, alist, None)
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 1194, in _reduce
+    result = func(result, element)
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 1158, in _coerce_expr_merge
+    s1 = a.sort()
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 1520, in sort
+    return BoolSortRef(Z3_get_sort(self.ctx_ref(), self.as_ast()), self.ctx)
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3.py", line 347, in __init__
+    Z3_inc_ref(self.ctx.ref(), self.as_ast())
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3core.py", line 1481, in Z3_inc_ref
+    _elems.Check(a0)
+  File "C:\Users\guilh\Documents\venvs\freedomSpeedTest\lib\site-packages\z3\z3core.py", line 1414, in Check
+    err = self.get_error_code(ctx)
+KeyboardInterrupt
