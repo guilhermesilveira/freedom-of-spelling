@@ -130,12 +130,10 @@ def freedom_search(language: Language, space, generate_rules_only=False,
 
     rules.add(rules_all_cards_on_deck(all_vars))
 
-    if generate_rules_only:
-        return
-
     print(len(rules))
 
-    s = Solver()
+    s = Solver()  # logFile="log.txt"
+
     s.set('smt.arith.random_initial_value', True)
 
     # random_seed (unsigned int) random seed (default: 0)
@@ -145,6 +143,10 @@ def freedom_search(language: Language, space, generate_rules_only=False,
     s.set('seed', random.randint(0, 2 ** 8))
 
     s.add(rules)
+
+    if generate_rules_only:
+        return
+
     r = s.check()
     if r == unsat:
         print("no solution")

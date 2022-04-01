@@ -1,5 +1,7 @@
 from itertools import permutations
 
+from tqdm import tqdm
+
 from freedom import card_length_for
 from simulator import simulate_deck
 from spaces import *
@@ -46,6 +48,7 @@ class Tester:
         deck = []
         for i in range(52):
             deck.append(self._rules[i])
+        # print_cards(deck)
         yes = 0
         no = 0
         for cut1 in space(1):

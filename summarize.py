@@ -111,11 +111,11 @@ sns.set_theme(style="whitegrid")
 # phase3a = summarize("phase3a", test=True)
 
 # remove test=True for quick reporting purposes
-# phase4a = summarize("phase4a")
-# phase4b = summarize("phase4b")
+phase4a = summarize("phase4a")
+phase4b = summarize("phase4b")
 # phase4a = summarize("phase4a", test=True)
 # phase4b = summarize("phase4b", test=True)
-# compare_results("English_Optimized", "English_Optimized_Distinct", phase4a, phase4b)
+compare_results("English_Optimized", "English_Optimized_Distinct", phase4a, phase4b)
 
 # remove test=True for quick reporting purposes
 # phase5a = summarize("phase5a", space_creator=space_full)
@@ -123,4 +123,4 @@ sns.set_theme(style="whitegrid")
 # phase5c = summarize("phase5c", space_creator=space_full)
 # phase5a = summarize("phase5a", space_creator=space_full, test=True)
 # phase5b = summarize("phase5b", space_creator=space_full, test=True)
-# phase5c = summarize("phase5c", space_creator=space_full, test=True)
+phase5c = summarize("phase5c", space_creator=space_full, test=True)
